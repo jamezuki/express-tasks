@@ -1,0 +1,29 @@
+GET https://jamezuki-express-tasks.herokuapp.com/tasks
+
+###
+
+GET https://jamezuki-express-tasks.herokuapp.com/tasks/id
+
+###
+
+POST https://jamezuki-express-tasks.herokuapp.com/tasks
+content-type: application/json
+
+{
+    "text": "Dinner with Pao",
+    "date": "Sunday, 7:00pm",
+    "reminder": true
+}
+
+###
+
+PATCH https://jamezuki-express-tasks.herokuapp.com/id
+content-type: application/json
+
+{
+    "reminder": false
+}
+
+###
+
+DELETE https://jamezuki-express-tasks.herokuapp.com/tasks/id
